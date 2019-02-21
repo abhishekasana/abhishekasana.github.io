@@ -1,0 +1,39 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi node_modules/next/dist/client/next": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/_app.js": 2,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/_error.js": 3,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/about.js": 4,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/home.js": 5,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/home/contactme.js": 6,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/home/dataConstants.js": 7,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/home/skillset.js": 8,
+      "static/8UoXvJeuGfmeIeSH7elDM/pages/home/whoami.js": 9,
+      "static/runtime/main.js": 10
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
