@@ -1,13 +1,31 @@
 const projectsList = [
     {
-        title: 'Nuddles Node.js wrapper for the Foursquare API',
-        hightLight: 'Nuddles',
+        title: 'Void Messenger - Secure code chatting application',
+        hightLight: 'Void Messenger',
         hexCode: '#EA4C89',
         link: ''
     },
     {
-        title: 'Jabbbar Python 3 wrapper for the Dribbble API',
-        hightLight: 'Jabbbar',
+        title: 'KeyLogger - Custom windows keylogger',
+        hightLight: 'KeyLogger',
+        hexCode: '#EA4C89',
+        link: ''
+    },
+    {
+        title: 'CommunicApp - Messaging andoird application',
+        hightLight: 'CommunicApp',
+        hexCode: '#EA4C89',
+        link: ''
+    },
+    {
+        title: 'Legal Recourse - Web application that suggest\'s the right legal representation',
+        hightLight: 'Legal Recourse',
+        hexCode: '#EA4C89',
+        link: ''
+    },
+    {
+        title: 'Mywaze - GeoSocial networking android application',
+        hightLight: 'Mywaze',
         hexCode: '#EA4C89',
         link: ''
     },
