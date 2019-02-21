@@ -12,12 +12,6 @@ const projectsList = [
         link: ''
     },
     {
-        title: 'CommunicApp - Messaging andoird application',
-        hightLight: 'CommunicApp',
-        hexCode: '#EA4C89',
-        link: ''
-    },
-    {
         title: 'Legal Recourse - Web application that suggest\'s the right legal representation',
         hightLight: 'Legal Recourse',
         hexCode: '#EA4C89',
