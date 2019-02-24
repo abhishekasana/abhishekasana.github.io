@@ -8,6 +8,13 @@ const Row = styled.div`
     flex-wrap: wrap;
 `;
 
+const Col = styled.div`
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+`;
+
 const ColDiff = styled.div`
     box-sizing: border-box;
     display: flex;
@@ -46,6 +53,7 @@ const Span = styled.span`
 export {
     Row,
     Text,
+    Col,
     Span,
     ColDiff,
     LiWrapper,

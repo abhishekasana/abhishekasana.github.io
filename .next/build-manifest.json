@@ -1,44 +1,23 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_2447349aa176fea6616e.js"
+  ],
   "pages": {
-    "/about": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
-    "/home/contactme": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
-    "/home/dataConstants": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
-    "/home": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
-    "/home/skillset": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
-    "/home/whoami": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.e73348ec9c93f0e6b203.js",
-      "static/runtime/main-83f74f1ff16d932587a4.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/home": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

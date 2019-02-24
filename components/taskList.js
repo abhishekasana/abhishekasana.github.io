@@ -18,7 +18,7 @@ const TaskList = (props) => {
       <SectionTitle title={listHeader}/>
       <ul>
         {updatedTaskList.map(item => (
-          <LiWrapper>
+          <LiWrapper key={item.title}>
             <Span>{item.title[0]}</Span>
             <StyleLink href={item.link}>
               <Span color={item.hexCode}>{item.hightLight}</Span>

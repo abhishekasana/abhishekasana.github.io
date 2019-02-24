@@ -60,33 +60,35 @@ var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img
 var social_list = [{
   title: 'linked-in',
   imgUrl: 'https://img.icons8.com/ios-glyphs/128/ffffff/linkedin.png',
-  link: '',
+  link: 'www.linkedin.com/in/abhishek-kasana-4a7836106',
   bgColor: '#0073a4'
 }, {
   title: 'stackoverflow',
   imgUrl: 'https://img.icons8.com/ios/128/ffffff/stackoverflow-filled.png',
-  link: '',
+  link: 'https://stackoverflow.com/users/9057473/',
   bgColor: '#f48024'
 }, {
   title: 'Android',
   imgUrl: 'https://img.icons8.com/material/128/ffffff/android-os.png',
-  link: '',
+  link: 'https://play.google.com/store/apps/dev?id=8404243559462055066',
   bgColor: '#7cb342'
 }, {
   title: 'twitter',
   imgUrl: 'https://img.icons8.com/ios-glyphs/128/ffffff/twitter-circled.png',
-  link: '',
+  link: 'https://twitter.com/abhishekasana',
   bgColor: '#00aced'
 }, {
   title: 'github',
   imgUrl: 'https://img.icons8.com/ios-glyphs/128/ffffff/github.png',
-  link: '',
+  link: 'https://github.com/abhishekasana',
   bgColor: '#24292d'
 }];
 
 var NavBar = function NavBar() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BackgroundWrapper, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(UlWrapper, null, social_list.map(function (item) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+      key: item.title
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
       href: item.link
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ImageWrapper, {
       src: item.imgUrl,
@@ -178,7 +180,9 @@ var TaskList = function TaskList(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_wrappers__WEBPACK_IMPORTED_MODULE_3__["SectionContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sectionTitle__WEBPACK_IMPORTED_MODULE_6__["default"], {
     title: listHeader
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, updatedTaskList.map(function (item) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["LiWrapper"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["Span"], null, item.title[0]), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyleLink, {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["LiWrapper"], {
+      key: item.title
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["Span"], null, item.title[0]), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyleLink, {
       href: item.link
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["Span"], {
       color: item.hexCode
@@ -198,13 +202,14 @@ TaskList.propTypes = {
 /*!********************************!*\
   !*** ./components/webcomps.js ***!
   \********************************/
-/*! exports provided: Row, Text, Span, ColDiff, LiWrapper */
+/*! exports provided: Row, Text, Col, Span, ColDiff, LiWrapper */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Row", function() { return Row; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Text", function() { return Text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Col", function() { return Col; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Span", function() { return Span; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ColDiff", function() { return ColDiff; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LiWrapper", function() { return LiWrapper; });
@@ -214,23 +219,27 @@ var Row = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConf
   displayName: "webcomps__Row",
   componentId: "sc-41l5u6-0"
 })(["box-sizing:border-box;display:flex;flex:0 1 auto;flex-direction:row;flex-wrap:wrap;"]);
+var Col = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "webcomps__Col",
+  componentId: "sc-41l5u6-1"
+})(["box-sizing:border-box;display:flex;flex:0 1 auto;flex-direction:column;"]);
 var ColDiff = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "webcomps__ColDiff",
-  componentId: "sc-41l5u6-1"
+  componentId: "sc-41l5u6-2"
 })(["box-sizing:border-box;display:flex;flex:0 1 auto;flex-basis:33%;flex-direction:column;@media (max-width:767px){flex-basis:100%;};"]);
 var LiWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].li.withConfig({
   displayName: "webcomps__LiWrapper",
-  componentId: "sc-41l5u6-2"
+  componentId: "sc-41l5u6-3"
 })(["color:#54C9FF;margin-bottom:.7em;list-style:none;&:before{content:'~';margin-right:1rem;};span{color:#fff;}"]);
 var Text = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
   displayName: "webcomps__Text",
-  componentId: "sc-41l5u6-3"
+  componentId: "sc-41l5u6-4"
 })(["font-size:", ";"], function (props) {
   return props.size ? props.size : '18px';
 });
 var Span = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].span.withConfig({
   displayName: "webcomps__Span",
-  componentId: "sc-41l5u6-4"
+  componentId: "sc-41l5u6-5"
 })(["font-size:", ";color:", " !important;"], function (props) {
   return props.size ? props.size : '18px';
 }, function (props) {
@@ -6179,7 +6188,7 @@ var Whoami = function Whoami() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhome&absolutePagePath=%2Froot%2Fwebprojects%2Fportfolio%2Fpages%2Fhome%2Findex.js ***!
   \********************************************************************************************************************************/
@@ -6202,5 +6211,5 @@ module.exports = dll_01ce18af005e042d77da;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=home.js.map
