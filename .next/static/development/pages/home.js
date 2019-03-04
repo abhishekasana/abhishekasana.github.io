@@ -6190,7 +6190,7 @@ var Whoami = function Whoami() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhome&absolutePagePath=%2Froot%2Fwebprojects%2Fportfolio%2Fpages%2Fhome%2Findex.js ***!
   \********************************************************************************************************************************/
@@ -6213,5 +6213,5 @@ module.exports = dll_01ce18af005e042d77da;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=home.js.map
