@@ -25,15 +25,15 @@
   },
   "chunks": {
     "byName": {
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/_app.js": 0,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/_document.js": 1,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/_error.js": 2,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/about.js": 3,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/home.js": 4,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/home/contactme.js": 5,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/home/dataConstants.js": 6,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/home/skillset.js": 7,
-      "static/gSoDdbQK8yDRJjml3ChQR/pages/home/whoami.js": 8
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/_app.js": 0,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/_document.js": 1,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/_error.js": 2,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/about.js": 3,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/home.js": 4,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/home/contactme.js": 5,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/home/dataConstants.js": 6,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/home/skillset.js": 7,
+      "static/aEcNSRcpUNbnV1ND5Ja~L/pages/home/whoami.js": 8
     },
     "bySource": {},
     "usedIds": [
