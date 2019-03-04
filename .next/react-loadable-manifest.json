@@ -575,7 +575,7 @@
       "publicPath": "static/chunks/commons.a026fc487adc8eab3d79.js"
     }
   ],
-  "./../webpack/buildin/global.js": [
+  "./../../webpack/buildin/global.js": [
     {
       "id": "yLpj",
       "name": "./node_modules/webpack/buildin/global.js",
