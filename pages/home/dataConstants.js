@@ -104,6 +104,13 @@ const skillsetList = [
     // },
 ];
 
+const contactMe = `I'm currently looking for remote or LDN/MTL/EU based work,
+ so if you're a startup looking for an always curious passionate dev, ping me
+ on Github and Twitter Or, you can get in touch via E-mail.`;
+const whoAmI = `I'm a massive cyberpunk nerd with an interest in open source and devops.
+ In my free time I like to hack on fun projects, play / watch football with friends,
+ gulp banana smoothies and take pictures (among other things, like obsessing over my Hacker News karma).`;
+
 export {
   historyList,
   projectsList,

@@ -10,9 +10,7 @@ const Whoami = () => (
             My name is Abhishek Kasana, I'm a 23 years old full stack developer based in Bengaluru, India.
         </Text>
         <Text>
-            I'm a massive cyberpunk nerd with an interest in open source and devops.
-            In my free time I like to hack on fun projects, play / watch football with friends,
-            gulp banana smoothies and take pictures (among other things, like obsessing over my Hacker News karma).
+            WIP
         </Text>
     </SectionContainer>
 );

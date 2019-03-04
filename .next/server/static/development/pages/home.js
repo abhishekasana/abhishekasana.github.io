@@ -515,7 +515,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_wrappers__WEBPACK_IMPORTED_MODULE_3__["SectionContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_sectionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "cat Contact.md"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "I'm currently looking for remote or LDN/MTL/EU based work, so if you're a cool startup looking for an always curious passionate dev, ping me on Github and Twitter. Or, you can get in touch via E-mail."));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "You can get in touch via E-mail."));
 });
 
 /***/ }),
@@ -586,6 +586,8 @@ var skillsetList = [{
   title: 'Frameworks',
   value: ['Django', 'NEXT JS', 'Android', 'Flask', 'React.js']
 }];
+var contactMe = "I'm currently looking for remote or LDN/MTL/EU based work,\n so if you're a startup looking for an always curious passionate dev, ping me\n on Github and Twitter Or, you can get in touch via E-mail.";
+var whoAmI = "I'm a massive cyberpunk nerd with an interest in open source and devops.\n In my free time I like to hack on fun projects, play / watch football with friends,\n gulp banana smoothies and take pictures (among other things, like obsessing over my Hacker News karma).";
 
 
 /***/ }),
@@ -709,7 +711,7 @@ __webpack_require__.r(__webpack_exports__);
 var Whoami = function Whoami() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_wrappers__WEBPACK_IMPORTED_MODULE_3__["SectionContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_sectionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "whoami"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "My name is Abhishek Kasana, I'm a 23 years old full stack developer based in Bengaluru, India."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "I'm a massive cyberpunk nerd with an interest in open source and devops. In my free time I like to hack on fun projects, play / watch football with friends, gulp banana smoothies and take pictures (among other things, like obsessing over my Hacker News karma)."));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "My name is Abhishek Kasana, I'm a 23 years old full stack developer based in Bengaluru, India."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_webcomps__WEBPACK_IMPORTED_MODULE_2__["Text"], null, "WIP"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Whoami);
