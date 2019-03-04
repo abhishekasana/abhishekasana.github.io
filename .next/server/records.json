@@ -33,19 +33,26 @@
       "static/vueHkKAzrLCfgH87~lqXn/pages/home/contactme.js": 5,
       "static/vueHkKAzrLCfgH87~lqXn/pages/home/dataConstants.js": 6,
       "static/vueHkKAzrLCfgH87~lqXn/pages/home/skillset.js": 7,
-      "static/vueHkKAzrLCfgH87~lqXn/pages/home/whoami.js": 8
+      "static/vueHkKAzrLCfgH87~lqXn/pages/home/whoami.js": 8,
+      "static/M3dQqja~ItCFLBwfpege0/pages/_app.js": 9,
+      "static/M3dQqja~ItCFLBwfpege0/pages/_document.js": 10,
+      "static/M3dQqja~ItCFLBwfpege0/pages/_error.js": 11,
+      "static/M3dQqja~ItCFLBwfpege0/pages/home.js": 12,
+      "static/M3dQqja~ItCFLBwfpege0/pages/home/contactme.js": 13,
+      "static/M3dQqja~ItCFLBwfpege0/pages/home/dataConstants.js": 14,
+      "static/M3dQqja~ItCFLBwfpege0/pages/home/skillset.js": 15,
+      "static/M3dQqja~ItCFLBwfpege0/pages/home/whoami.js": 16
     },
     "bySource": {},
     "usedIds": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      9
     ]
   }
 }

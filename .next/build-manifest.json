@@ -1,11 +1,6 @@
 {
   "devFiles": [],
   "pages": {
-    "/about": [
-      "static/runtime/webpack-f012b0c56e51d71ffc22.js",
-      "static/chunks/commons.a026fc487adc8eab3d79.js",
-      "static/runtime/main-dd7c6fb4d285397cc4fe.js"
-    ],
     "/home/contactme": [
       "static/runtime/webpack-f012b0c56e51d71ffc22.js",
       "static/chunks/commons.a026fc487adc8eab3d79.js",

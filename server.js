@@ -6,8 +6,11 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 // const handle = app.getRequestHandler();
 
-const handler = routes.getRequestHandler(app);
+// const handler = routes.getRequestHandler(app);
 
+const handler = routes.getRequestHandler(app, ({req, res, route, query}) => {
+  app.render(req, res, route.page, query)
+})
 // We are passing our server to application (app) of next js.
 app.prepare()
 .then(() => {
