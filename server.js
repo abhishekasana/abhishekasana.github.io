@@ -1,18 +1,18 @@
-const express = require('express')
-const next = require('next')
+const express = require('express');
+const next = require('next');
+const routes = require('./routes');
 
-const dev = process.env.NODE_ENV !== 'production'
-const app = next({ dev })
-const handle = app.getRequestHandler()
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+// const handle = app.getRequestHandler();
 
-const routes = require('./routes')
-const handler = routes.getRequestHandler(app)
+const handler = routes.getRequestHandler(app);
 
 // We are passing our server to application (app) of next js.
 app.prepare()
 .then(() => {
   //server creation
-  const server = express()
+  const server = express();
 
   server.use(handler);
 
