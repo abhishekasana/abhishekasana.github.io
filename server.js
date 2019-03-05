@@ -1,6 +1,10 @@
 const express = require('express');
 const next = require('next');
 const routes = require('./routes');
+const compression = require('compression')
+
+const PORT = process.env.PORT || 3000;
+const HTTPS_PORT = process.env.HTTPS_PORT || 8443;
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -14,6 +18,9 @@ app.prepare()
   //server creation
   const server = express();
 
+  if (process.env.NODE_ENV === "production") {
+      server.use( compression() );
+  }
   server.use(handler);
 
   // server.get('*', (req, res) => {
