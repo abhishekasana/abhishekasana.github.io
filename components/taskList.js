@@ -1,5 +1,5 @@
 import React from "react";
-import { LiWrapper, Span } from "./webcomps";
+import { LiWrapper, Span, UlWrapper } from "./webcomps";
 import { SectionContainer } from "./wrappers";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
@@ -8,11 +8,6 @@ import SectionTitle from "./sectionTitle";
 
 const StyleLink = styled.a`
     text-decoration: none;
-`;
-const UlWrapper = styled.ul`
-  @media (max-width: 767px) {
-    padding-left: 0px;
-  }
 `;
 const TaskList = (props) => {
   const { listHeader, taskList } = props;

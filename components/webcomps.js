@@ -27,6 +27,14 @@ const ColDiff = styled.div`
     };
 `;
 
+const UlWrapper = styled.ul`
+  padding-left: ${props => props.startPadding ? props.startPadding : '26px'};
+  margin: 0px;
+  @media (max-width: 767px) {
+    padding-left: 12px;
+  }
+`;
+
 const LiWrapper = styled.li`
     color: #54C9FF;
     margin-bottom: .7em;
@@ -57,4 +65,5 @@ export {
     Span,
     ColDiff,
     LiWrapper,
+    UlWrapper,
 }

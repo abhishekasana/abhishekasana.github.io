@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import SectionTitle from '../../components/sectionTitle';
-import { Row, ColDiff, LiWrapper } from '../../components/webcomps';
+import { Row, ColDiff, LiWrapper, UlWrapper } from '../../components/webcomps';
 import { SectionContainer } from "../../components/wrappers";
 
 import { skillsetList } from './dataConstants';
@@ -18,9 +18,11 @@ const Skillset = () => (
             {skillsetList.map(item => (
                 <ColDiff key={item.title}>
                     <CategoryTitle>{item.title}</CategoryTitle>
-                    {item.value.map(subitem => (
-                        <LiWrapper key={subitem}><span>{subitem}</span></LiWrapper>
-                    ))}
+                    <UlWrapper startPadding='0px'>
+                      {item.value.map(subitem => (
+                          <LiWrapper key={subitem}><span>{subitem}</span></LiWrapper>
+                      ))}
+                    </UlWrapper>
                 </ColDiff>
             ))}
         </Row>
