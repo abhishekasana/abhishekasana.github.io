@@ -1,4 +1,4 @@
 const routes = require('next-routes');
 
 module.exports = routes()
-  .add('index', '/', '/home');
+  .add('index', '/kasana', '/home');
