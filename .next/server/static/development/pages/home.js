@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -264,6 +264,10 @@ var StyleLink = styled_components__WEBPACK_IMPORTED_MODULE_5___default.a.a.withC
   displayName: "taskList__StyleLink",
   componentId: "ksnv82-0"
 })(["text-decoration:none;"]);
+var UlWrapper = styled_components__WEBPACK_IMPORTED_MODULE_5___default.a.ul.withConfig({
+  displayName: "taskList__UlWrapper",
+  componentId: "ksnv82-1"
+})(["@media (max-width:767px){padding-left:0px;}"]);
 
 var TaskList = function TaskList(props) {
   var listHeader = props.listHeader,
@@ -275,7 +279,7 @@ var TaskList = function TaskList(props) {
   });
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_wrappers__WEBPACK_IMPORTED_MODULE_3__["SectionContainer"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_sectionTitle__WEBPACK_IMPORTED_MODULE_6__["default"], {
     title: listHeader
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, updatedTaskList.map(function (item) {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(UlWrapper, null, updatedTaskList.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["LiWrapper"], {
       key: item.title
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_webcomps__WEBPACK_IMPORTED_MODULE_2__["Span"], null, item.title[0]), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(StyleLink, {
@@ -350,7 +354,7 @@ var Span = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.withCon
 /*!********************************!*\
   !*** ./components/wrappers.js ***!
   \********************************/
-/*! exports provided: Container, CompressContainer, SectionContainer */
+/*! exports provided: Container, CompressContainer, SectionContainer, HalfContainer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -358,6 +362,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompressContainer", function() { return CompressContainer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SectionContainer", function() { return SectionContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HalfContainer", function() { return HalfContainer; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -369,9 +374,13 @@ var CompressContainer = styled_components__WEBPACK_IMPORTED_MODULE_0___default()
   displayName: "wrappers__CompressContainer",
   componentId: "sc-1mlzmjp-1"
 })(["@media (min-width:768px){width:80%;margin:16px;}"]);
+var HalfContainer = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Container).withConfig({
+  displayName: "wrappers__HalfContainer",
+  componentId: "sc-1mlzmjp-2"
+})(["@media (min-width:768px){max-width:1028px;margin:32px;}"]);
 var SectionContainer = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "wrappers__SectionContainer",
-  componentId: "sc-1mlzmjp-2"
+  componentId: "sc-1mlzmjp-3"
 })(["margin-bottom:2em !important;"]);
 
 
@@ -627,7 +636,7 @@ var TitleWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.p.wi
 })(["font-size:36px;opacity:0.5;font-family:'Monoton',cursive;text-align:right;margin-right:8px;@media (max-width:767px){margin-right:0px;text-align:center;}"]);
 
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_wrappers__WEBPACK_IMPORTED_MODULE_3__["CompressContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_whoami__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skillset__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_taskList__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_wrappers__WEBPACK_IMPORTED_MODULE_3__["HalfContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_whoami__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_skillset__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_taskList__WEBPACK_IMPORTED_MODULE_2__["default"], {
     listHeader: "ls projects/",
     taskList: _dataConstants__WEBPACK_IMPORTED_MODULE_8__["projectsList"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_taskList__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -718,7 +727,7 @@ var Whoami = function Whoami() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!***********************************!*\
   !*** multi ./pages/home/index.js ***!
   \***********************************/

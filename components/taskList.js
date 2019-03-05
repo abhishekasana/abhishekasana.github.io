@@ -9,14 +9,18 @@ import SectionTitle from "./sectionTitle";
 const StyleLink = styled.a`
     text-decoration: none;
 `;
-
+const UlWrapper = styled.ul`
+  @media (max-width: 767px) {
+    padding-left: 0px;
+  }
+`;
 const TaskList = (props) => {
   const { listHeader, taskList } = props;
   const updatedTaskList = taskList.map(task => ({...task, title : task.title.split(task.hightLight)}));
   return(
     <SectionContainer>
       <SectionTitle title={listHeader}/>
-      <ul>
+      <UlWrapper>
         {updatedTaskList.map(item => (
           <LiWrapper key={item.title}>
             <Span>{item.title[0]}</Span>
@@ -26,7 +30,7 @@ const TaskList = (props) => {
             <Span>{item.title[1]}</Span>
           </LiWrapper>
         ))}
-      </ul>
+      </UlWrapper>
     </SectionContainer>
   );
 };

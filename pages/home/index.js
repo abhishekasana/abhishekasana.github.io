@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from '../../components/Layout';
 import TaskList from '../../components/taskList'
-import { CompressContainer } from '../../components/wrappers';
+import { HalfContainer } from '../../components/wrappers';
 import styled from 'styled-components';
 
 import SkillSet from './skillset';
@@ -22,7 +22,7 @@ const TitleWrapper = styled.p`
 
 const Index = () => (
     <Layout>
-        <CompressContainer>
+        <HalfContainer>
             {/*<TitleWrapper>NEVER SETTLE</TitleWrapper>*/}
             <Whoami/>
             <SkillSet/>
@@ -30,7 +30,7 @@ const Index = () => (
             <TaskList listHeader="history" taskList={historyList} />
             <TaskList listHeader="ls articles/" taskList={articlesList} />
             <ContactMe />
-        </CompressContainer>
+        </HalfContainer>
         <TitleWrapper>NEVER SETTLE</TitleWrapper>
     </Layout>
 );

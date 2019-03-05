@@ -12,6 +12,12 @@ const CompressContainer = styled(Container)`
         margin: 16px;
     }
 `;
+const HalfContainer = styled(Container)`
+  @media (min-width: 768px) {
+    max-width: 1028px;
+    margin: 32px;
+  }
+`;
 const SectionContainer = styled.div`
   margin-bottom: 2em !important;
 `;
@@ -19,4 +25,5 @@ export {
     Container,
     CompressContainer,
     SectionContainer,
+    HalfContainer,
 };
