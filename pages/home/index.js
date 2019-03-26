@@ -25,8 +25,8 @@ const Index = () => (
         <HalfContainer>
             {/*<TitleWrapper>NEVER SETTLE</TitleWrapper>*/}
             <Whoami/>
-            <SkillSet/>
             <TaskList listHeader="ls projects/" taskList={projectsList} />
+            <SkillSet/>
             <TaskList listHeader="history" taskList={historyList} />
             <TaskList listHeader="ls articles/" taskList={articlesList} />
             <ContactMe />

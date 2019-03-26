@@ -12,14 +12,7 @@ const Col = styled.div`
     box-sizing: border-box;
     display: flex;
     flex: 0 1 auto;
-    flex-direction: column;
-`;
-
-const ColDiff = styled.div`
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 1 auto;
-    flex-basis: 33%;
+    flex-basis: ${props => props.flexbasis ? props.flexbasis : '100%'};
     flex-direction: column;
 
     @media (max-width: 767px) {
@@ -63,7 +56,6 @@ export {
     Text,
     Col,
     Span,
-    ColDiff,
     LiWrapper,
     UlWrapper,
 }

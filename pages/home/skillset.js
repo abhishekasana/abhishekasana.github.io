@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import SectionTitle from '../../components/sectionTitle';
-import { Row, ColDiff, LiWrapper, UlWrapper } from '../../components/webcomps';
+import { Row, Col, LiWrapper, UlWrapper } from '../../components/webcomps';
 import { SectionContainer } from "../../components/wrappers";
 
 import { skillsetList } from './dataConstants';
@@ -16,14 +16,14 @@ const Skillset = () => (
         <SectionTitle title="cat skills.md" />
         <Row>
             {skillsetList.map(item => (
-                <ColDiff key={item.title}>
+                <Col flexbasis='33%' key={item.title}>
                     <CategoryTitle>{item.title}</CategoryTitle>
                     <UlWrapper startPadding='0px'>
                       {item.value.map(subitem => (
                           <LiWrapper key={subitem}><span>{subitem}</span></LiWrapper>
                       ))}
                     </UlWrapper>
-                </ColDiff>
+                </Col>
             ))}
         </Row>
     </SectionContainer>
