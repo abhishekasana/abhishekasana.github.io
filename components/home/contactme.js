@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Text } from '../webcomps';
-import SectionTitle from '../sectionTitle';
+import SectionTitle from '../genSection/sectionTitle';
 import { SectionContainer } from "../wrappers";
 
 export default () => (

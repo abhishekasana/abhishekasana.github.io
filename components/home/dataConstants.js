@@ -54,7 +54,7 @@ const articlesList = [
     },
 ];
 
-const skillsetList = [
+const skillSetList = [
     {
         title: 'Languages',
         value: [
@@ -112,8 +112,8 @@ const whoAmI = `I'm a massive cyberpunk nerd with an interest in open source and
  gulp banana smoothies and take pictures (among other things, like obsessing over my Hacker News karma).`;
 
 export {
-  historyList,
-  projectsList,
-  articlesList,
-  skillsetList,
+    historyList,
+    projectsList,
+    articlesList,
+    skillSetList,
 };

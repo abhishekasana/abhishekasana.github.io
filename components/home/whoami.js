@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { Text } from '../webcomps';
-import SectionTitle from '../sectionTitle';
+import SectionTitle from '../genSection/sectionTitle';
 import { SectionContainer } from "../wrappers";
 
-const Whoami = () => (
+const WhoAmI = () => (
     <SectionContainer>
         <SectionTitle title="whoami" />
         <Text>
-            My name is Abhishek Kasana, I'm a 23 years old full stack developer based in Bengaluru, India.
+            My name is Abhishek Kasana, I'm a full stack developer based in Bengaluru, India.
         </Text>
         <Text>
             WIP
@@ -16,4 +16,4 @@ const Whoami = () => (
     </SectionContainer>
 );
 
-export default Whoami;
+export default WhoAmI;
