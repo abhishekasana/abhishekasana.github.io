@@ -1,7 +1,6 @@
 const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  // next export -> assest path update
   assetPrefix: prod ? '/out/' : '',
   // next export -> /out/home/index.js -> /out/index.js
   exportPathMap: async function (
@@ -12,5 +11,5 @@ module.exports = {
       '/': { page: '/home' },
     }
   },
-}
+};
 
