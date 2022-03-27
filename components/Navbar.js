@@ -38,22 +38,13 @@ const StickRow = styled(Row)`
   margin-left: ${props => props.stickRight ? "auto" : "unset"};
   margin-right: ${props => props.stickLeft ? "auto" : "unset"};
 `;
-const BaseIconAnchorWrapper = styled.a`
+const IconAnchorWrapper = styled.a`
   height: 24px;
   width: 24px;
-  font-size: 20px;
-
-  @media (max-width: 1024px) {
-    height: 20px;
-    font-size: 16px;
-  }
-
-`;
-const IconAnchorWrapper = styled(BaseIconAnchorWrapper)`
+  padding: 12px;
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 12px;
   transition: .5s;
   -o-transition:.5s;
   -ms-transition:.5s;
@@ -64,6 +55,10 @@ const IconAnchorWrapper = styled(BaseIconAnchorWrapper)`
     transform: scale(1.1);
     background-color: ${COLORS.DARK_PURPLE};
     box-shadow: 0 0 8px 2px ${props => props.bgColor};
+  }
+
+  @media (max-width: 1024px) {
+    padding: 12px 6px;
   }
 `;
 const ImageWrapper = styled.img`
