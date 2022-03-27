@@ -39,8 +39,8 @@ const StickRow = styled(Row)`
   margin-right: ${props => props.stickLeft ? "auto" : "unset"};
 `;
 const IconAnchorWrapper = styled.a`
-  height: 24px;
-  width: 24px;
+  height: 25px;
+  width: 25px;
   padding: 12px;
   display: block;
   text-align: center;
@@ -62,8 +62,8 @@ const IconAnchorWrapper = styled.a`
   }
 `;
 const ImageWrapper = styled.img`
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 `;
 const StyleLink = styled.a`
   text-decoration: none;
