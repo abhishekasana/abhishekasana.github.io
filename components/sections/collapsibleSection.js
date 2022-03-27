@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
 
-import { SectionContainer } from "./wrappers";
+import { SectionContainer } from "../wrappers";
 
 const HeadWrapper = styled.div`
     cursor: pointer;
@@ -10,6 +10,7 @@ const HeadWrapper = styled.div`
         content: '${props => props.collapsed === true ? '▌': ''}';
         // animation: blinker 1.2s linear infinite;
         color: #FFF053;
+        font-family: monospace;
         display: inline-block;
         padding-left: 12px;
     };
@@ -19,15 +20,21 @@ const HeadWrapper = styled.div`
         }
     }
 `;
+const SectionWrapper = styled(SectionContainer)`
+  margin: ${props => props.style && props.style.margin ? props.style.margin: "inherit"};
+`;
 
-class CollapsibleBar extends React.PureComponent {
+
+class CollapsibleSection extends React.PureComponent {
     static propTypes = {
-        header: PropTypes.elementType.isRequired,
-        body: PropTypes.elementType.isRequired,
+        header: PropTypes.object.isRequired,
+        body: PropTypes.object.isRequired,
         collapsed: PropTypes.bool,
+        style: PropTypes.shape({})
     };
     static defaultProps = {
-        collapsed: true
+        collapsed: true,
+        style: {}
     };
 
     constructor(props) {
@@ -48,19 +55,19 @@ class CollapsibleBar extends React.PureComponent {
     };
 
     render() {
-        const { header, body } = this.props;
+        const { header, body, style: {global: globalStyle = {}} } = this.props;
         const { collapsed } = this.state;
 
         return (
-            <SectionContainer>
+            <SectionWrapper style={globalStyle}>
                 <HeadWrapper onClick={() => this.toggleDetailView()} collapsed={collapsed}>
                     {header}
                 </HeadWrapper>
                 {!collapsed && body}
-            </SectionContainer>
+            </SectionWrapper>
         );
     }
 
 }
 
-export default CollapsibleBar;
+export default CollapsibleSection;

@@ -31,6 +31,28 @@ const socialList = [
     },
 ];
 
+const menuList = [
+    {
+        title: 'ABOUT',
+        imgUrl: null,
+        link: '/about-me',
+        bgColor: '#fff'
+    },
+]
+
+const featuredBlogs = [
+    {
+        title: "Birthday Attack",
+        description: "A Birthday Attack is a brute force cryptographic attack which exploits the possibility of a hash collision. " +
+            "This exploit cracks the mathematics behind the birthday paradox...",
+        link: "/blog/birthday-attack",
+        icon: "https://img.icons8.com/material-sharp/256/EA4C89/cyber-security.png",
+        subscript: "Cryptography | 10 min read"
+    }
+]
+
 export {
-    socialList
+    socialList,
+    menuList,
+    featuredBlogs
 }

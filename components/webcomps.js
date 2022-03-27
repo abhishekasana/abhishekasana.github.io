@@ -12,11 +12,11 @@ const Col = styled.div`
     box-sizing: border-box;
     display: flex;
     flex: 0 1 auto;
-    flex-basis: ${props => props.flexbasis ? props.flexbasis : '100%'};
+    flex-basis: ${props => props.flexbasis ? props.flexbasis : 'auto'};
     flex-direction: column;
 
     @media (max-width: 767px) {
-        flex-basis: 100%;
+        flex-basis: ${props => props.mFlexbasis ? props.mFlexbasis : 'auto'};
     };
 `;
 

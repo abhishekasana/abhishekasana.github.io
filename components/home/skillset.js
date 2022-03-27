@@ -2,8 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 
 import { Row, Col, LiWrapper, UlWrapper } from '../webcomps';
-import SectionTitle from '../genSection/sectionTitle';
-import CollapsibleBar from '../collapsibleBar';
+import SectionTitle from '../sections/sectionTitle';
+import CollapsibleSection from '../sections/collapsibleSection';
 import { SectionContainer } from "../wrappers";
 import { skillSetList } from './dataConstants';
 
@@ -15,7 +15,7 @@ const CategoryTitle = styled.h3`
 
 const SkillSet = () => (
     <SectionContainer>
-        <CollapsibleBar
+        <CollapsibleSection
             header={<SectionTitle title="cat skills.md" enterSuffix={true}/>}
             body={
                 <Row>

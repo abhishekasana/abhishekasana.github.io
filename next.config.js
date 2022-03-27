@@ -9,6 +9,8 @@ module.exports = {
   ) {
     return {
       '/': { page: '/home' },
+      '/about-me': { page: '/about-me' },
+      '/blog/birthday-attack': { page: '/blog/birthday-attack' },
     }
   },
 };

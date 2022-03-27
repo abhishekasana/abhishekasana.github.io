@@ -1,5 +1,5 @@
 import { ServerStyleSheet } from 'styled-components';
-import Document, { Head, Main, NextScript } from 'next/document'
+import Document, { Head, Main, NextScript, Html } from 'next/document'
 
 export default class CustomDocument extends Document {
     static async getInitialProps({ renderPage }) {
@@ -11,27 +11,27 @@ export default class CustomDocument extends Document {
 
     render() {
         return (
-            <html lang="en">
-            <Head>
-                {this.props.styledTags}
-                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-                <style>
-                    {`
-                        body {
-                            margin: 0;
-                            background: #1b1c30;
-                            color: white;
-                            font-family: Inconsolata,monospace;
-                        } /* custom! */`
-                    }
-                </style>
-                <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" />
-            </Head>
-            <body className="custom_class">
-                <Main />
-                <NextScript />
-            </body>
-            </html>
+            <Html lang="en">
+                <Head>
+                    {this.props.styledTags}
+                    <style>
+                        {`
+                            /* custom! */
+                            body {
+                                margin: 0;
+                                background: #1b1c30;
+                                color: white;
+                                font-family: Lato,sans-serif;
+                            } 
+                        `}
+                    </style>
+                    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet" />
+                </Head>
+                <body className="custom_class">
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
         )
     }
 }

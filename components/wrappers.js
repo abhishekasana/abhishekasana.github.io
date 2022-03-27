@@ -6,24 +6,20 @@ const Container = styled.div`
     padding: 16px;
 `;
 
-const CompressContainer = styled(Container)`
-    @media (min-width: 768px) {
-        width: 80%;
-        margin: 16px;
-    }
-`;
-const HalfContainer = styled(Container)`
-  @media (min-width: 768px) {
-    max-width: 1028px;
-    margin: 32px;
+const BaseContainer = styled(Container)`
+  // controls base layout of all pages excluding nav
+  @media (min-width: 1025px) {
+    max-width: 960px;
+    padding: 0;
   }
+  margin: auto;
 `;
+
 const SectionContainer = styled.div`
   margin-bottom: 2em !important;
 `;
 export {
     Container,
-    CompressContainer,
     SectionContainer,
-    HalfContainer,
+    BaseContainer,
 };
