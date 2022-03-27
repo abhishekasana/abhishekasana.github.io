@@ -40,7 +40,9 @@ const StickRow = styled(Row)`
 `;
 const BaseIconAnchorWrapper = styled.a`
   height: 24px;
+  width: 24px;
   font-size: 20px;
+
   @media (max-width: 1024px) {
     height: 20px;
     font-size: 16px;
@@ -52,7 +54,6 @@ const IconAnchorWrapper = styled(BaseIconAnchorWrapper)`
   text-align: center;
   text-decoration: none;
   padding: 12px;
-   
   transition: .5s;
   -o-transition:.5s;
   -ms-transition:.5s;
