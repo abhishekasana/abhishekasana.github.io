@@ -14,13 +14,13 @@ const TitleWrapper = styled.p`
     }
 `;
 
-const Footer = () => (
-    <>
-    {/*<Head>*/}
-    {/*    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />*/}
-    {/*</Head>*/}
+function Footer() {
+  return <>
+    {/* <Head> */}
+    {/*    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" /> */}
+    {/* </Head> */}
     <TitleWrapper>NEVER SETTLE</TitleWrapper>
     </>
-);
+}
 
 export default Footer;

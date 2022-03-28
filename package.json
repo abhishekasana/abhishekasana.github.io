@@ -8,7 +8,8 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "NODE_ENV=production PORT=$PORT node server.js",
-    "collectjs": "cp ./out/index.html .;"
+    "collectjs": "cp ./out/index.html .;",
+    "lint": "next lint"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +23,9 @@
     "react-dom": "^17.0.2",
     "styled-components": "^4.1.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.1",
+    "eslint-config-prettier": "^8.5.0"
+  }
 }

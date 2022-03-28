@@ -32,6 +32,7 @@ class CollapsibleSection extends React.PureComponent {
         collapsed: PropTypes.bool,
         style: PropTypes.shape({})
     };
+
     static defaultProps = {
         collapsed: true,
         style: {}
@@ -42,7 +43,7 @@ class CollapsibleSection extends React.PureComponent {
         const { collapsed } = props;
 
         this.state = {
-            collapsed: collapsed,
+            collapsed,
         };
     }
 

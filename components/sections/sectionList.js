@@ -1,8 +1,8 @@
 import React from "react";
-import { LiWrapper, Span, UlWrapper } from "../webcomps";
-import { SectionContainer } from "../wrappers";
 import PropTypes from "prop-types";
 import styled from 'styled-components';
+import { LiWrapper, Span, UlWrapper } from "../webcomps";
+import { SectionContainer } from "../wrappers";
 
 import SectionTitle from "./sectionTitle";
 import CollapsibleSection from './collapsibleSection';
@@ -17,6 +17,7 @@ class SectionList extends React.PureComponent {
         taskList: PropTypes.arrayOf(PropTypes.object).isRequired,
         collapsed: PropTypes.bool
     };
+
     static defaultProps = {
         collapsed: true,
     };

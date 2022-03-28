@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const TitleWrapper = styled.h1`
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 400;
   letter-spacing: -1px;
   line-height: 1.1;
@@ -13,11 +13,11 @@ const TitleWrapper = styled.h1`
   }
 `;
 
-const Title =  ({ title }) => (
-    <TitleWrapper>
+function Title({ title }) {
+  return <TitleWrapper>
         {title}
     </TitleWrapper>
-);
+}
 
 Title.propTypes = {
     title: PropTypes.string.isRequired,

@@ -43,6 +43,7 @@ const LiWrapper = styled.li`
 
 const Text = styled.p`
   font-size: ${props => (props.size ? props.size: '18px')};
+  color: ${props => (props.color ? props.color: "inherit")}
 `;
 
 const Span = styled.span`

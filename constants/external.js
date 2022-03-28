@@ -43,11 +43,17 @@ const menuList = [
 const featuredBlogs = [
     {
         title: "Birthday Attack",
-        description: "A Birthday Attack is a brute force cryptographic attack which exploits the possibility of a hash collision. " +
-            "This exploit cracks the mathematics behind the birthday paradox...",
+        description: "What is a Birthday Attack in cryptography?",
         link: "/blog/birthday-attack",
-        icon: "https://img.icons8.com/material-sharp/256/EA4C89/cyber-security.png",
+        icon: "https://img.icons8.com/material-sharp/256/56569e/cyber-security.png",
         subscript: "Cryptography | 10 min read"
+    },
+    {
+        title: "Github Pages with NextJS",
+        description: "Setup your own website with github pages using Next js framework.",
+        link: "/blog/github-pages-nextjs",
+        icon: "https://img.icons8.com/pastel-glyph/256/56569e/website--v2.png",
+        subscript: "Js | 10 min read"
     }
 ]
 

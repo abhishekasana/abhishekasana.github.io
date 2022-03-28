@@ -13,10 +13,10 @@ const CategoryTitle = styled.h3`
     color: #54C9FF;
 `;
 
-const SkillSet = () => (
-    <SectionContainer>
+function SkillSet() {
+  return <SectionContainer>
         <CollapsibleSection
-            header={<SectionTitle title="cat skills.md" enterSuffix={true}/>}
+            header={<SectionTitle title="cat skills.md" enterSuffix/>}
             body={
                 <Row>
                     {skillSetList.map(item => (
@@ -33,6 +33,6 @@ const SkillSet = () => (
             }
         />
     </SectionContainer>
-);
+}
 
 export default SkillSet;

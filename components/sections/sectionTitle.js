@@ -19,12 +19,12 @@ const SpanWrapper = styled.span`
     vertical-align: middle;
 `;
 
-const SectionTitle =  ({ title }) => (
-    <TitleWrapper>
+function SectionTitle({ title }) {
+  return <TitleWrapper>
         <SpanWrapper>zerodark@kasana:~$</SpanWrapper>
         <SpanWrapper>&nbsp;{title}</SpanWrapper>
     </TitleWrapper>
-);
+}
 
 SectionTitle.propTypes = {
     title: PropTypes.string.isRequired,

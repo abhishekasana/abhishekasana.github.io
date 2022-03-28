@@ -52,7 +52,7 @@ const generalizedProbSnippet = (
     </Snippet>
 );
 
-const BirthdayAttackBlog = () => {
+function BirthdayAttackBlog() {
     return (
         <>
             <Head>
@@ -82,7 +82,7 @@ const BirthdayAttackBlog = () => {
                         <BlogSectionHeader>
                             The Birthday Paradox
                         </BlogSectionHeader>
-                        Suppose if there are "n" number of people in a room, there is a probability that some of them might have
+                        Suppose if there are &quot;n&quot; number of people in a room, there is a probability that some of them might have
                         their birthdays on a similar day. Intuitively this probability might seem small. But, actually its about 50%
                         (r1)
                         chance that two people might share the same birthday in a room of 23 people (n=23) and this reaches 99.9%
@@ -90,13 +90,13 @@ const BirthdayAttackBlog = () => {
                         the number of people in room are 75 (n=75).
                         <br/>
                         <br/>
-                        One important point to consider here is that we don't care which two people share a birthday. To arrive at
+                        One important point to consider here is that we don&quot;t care which two people share a birthday. To arrive at
                         this 50% (r1) probability of a birthday match in a room of 23 people we form 253 pairs/comparisons.
                         <br/>
                         <CollapsibleSection
                             header={<p>Comparisons Derivation</p>}
                             body={comparisonSnippet}
-                            collapsed={true}
+                            collapsed
                             style={{
                                 global: {
                                     margin: "1em 0 0 0 !important",
@@ -109,7 +109,7 @@ const BirthdayAttackBlog = () => {
                         <BlogSectionHeader>
                             Maths behind The Birthday Paradox
                         </BlogSectionHeader>
-                        According to the pigeonhole principle, if n items are put into m containers, with n>m, then at least one
+                        According to the pigeonhole principle, if n items are put into m containers, with n&gt;m, then at least one
                         container must contain more than one item.
                         <br/>
                         In relation to the birthday paradox, the pigeonhole principle can be used to intuitively see that as the
@@ -128,7 +128,7 @@ const BirthdayAttackBlog = () => {
                         <CollapsibleSection
                             header={<p>Equation Derivation</p>}
                             body={generalizedProbSnippet}
-                            collapsed={true}
+                            collapsed
                             style={{
                                 global: {
                                     margin: "1em 0 0 0 !important",
@@ -164,33 +164,33 @@ const BirthdayAttackBlog = () => {
                         of a hash function is known as a hash collision.
                         <br/>
                         According to the Pigeonhole Principle, it is impossible to avoid hash collisions, unless the size of the
-                        output is at least as large as the input (which defeat's the purpose of a hash function).
+                        output is at least as large as the input (which defeat&quot;s the purpose of a hash function).
                         <br/>
                         <BlogSectionHeader>
                             Exploitation in action
                         </BlogSectionHeader>
-                        Suppose "A" wants to share a document with "B".&nbsp;&nbsp;"A" signs the document by n-bit hash code.
+                        Suppose &quot;A&quot; wants to share a document with &quot;B&quot;.&nbsp;&nbsp;&quot;A&quot; signs the document by n-bit hash code.
                         <br/>
-                        Now,&nbsp;&nbsp;evil "C" can generate <span ref={node => renderInlineEquation("2^{n}", node)}/>
+                        Now,&nbsp;&nbsp;evil &quot;C&quot; can generate <span ref={node => renderInlineEquation("2^{n}", node)}/>
                         versions of the document (appending space, blank line, etc to output different hash but still
                         maintaining the document visually alike to the original), generate&nbsp;
                         <span ref={node => renderInlineEquation("2^{n}", node)}/> versions of the evil
                         document, and see which pair hashes to the same value.
                         <br/>
                         The probability that there is a benign document and an evil document
-                        with the same hash is greater > 0.5 i.e&nbsp;<span ref={node => renderInlineEquation("O(\\sqrt N)", node)}/>.
+                        with the same hash is greater&gt;0.5 i.e&nbsp;<span ref={node => renderInlineEquation("O(\\sqrt N)", node)}/>.
                         If no match found, additional valid and fraudulent document are generated until a match is made.
                         <br/>
-                        "C" then presents the benign document for "B" to agree to, and now he has the evil document with
-                        the same signature. This attack is called a "collision attack"; as the attacker is
-                        looking for a "collision".
+                        &quot;C&quot; then presents the benign document for &quot;B&quot; to agree to, and now he has the evil document with
+                        the same signature. This attack is called a &quot;collision attack&quot;; as the attacker is
+                        looking for a &quot;collision&quot;.
                         <br/>
                         <br/>
-                        On the other hand, if "C" has no control over the good document, this doesn't work. He can,
+                        On the other hand, if &quot;C&quot; has no control over the good document, this doesn&quot;t work. He can,
                         of course, create 𝑁 evil documents and see if there is one with the same hash as the good one,
                         however the probability  of that happening is significantly smaller if 𝑁 is large it goes upto
                         &nbsp;<span ref={node => renderInlineEquation("O(N)", node)}/>.
-                        This attack is called a "second preimage attack", that is, find a second
+                        This attack is called a &quot;second preimage attack&quot;, that is, find a second
                         message that hashes to the same value as a given one.
                         If the source document is already fixed then we can do a pre-image attack where we try to find a message
                         that has a specific hash value.
@@ -199,5 +199,5 @@ const BirthdayAttackBlog = () => {
             </Layout>
         </>
     )
-};
+}
 export default BirthdayAttackBlog;

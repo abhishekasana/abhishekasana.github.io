@@ -3,8 +3,8 @@ import React from "react";
 import styled from 'styled-components';
 
 import {socialList, menuList} from 'constants/external';
-import {Row, Span} from "./webcomps";
 import COLORS from "constants/color";
+import {Row, Span} from "./webcomps";
 
 const BackgroundWrapper = styled.div`
     background-image: linear-gradient(to right, #8E2DE2 , #4A00E0);
@@ -86,8 +86,8 @@ const renderMenuItems = (listItems) => (
     ))
 )
 
-const NavBar = () => (
-    <BackgroundWrapper>
+function NavBar() {
+  return <BackgroundWrapper>
         <RowWrapper>
             <Row>
                 <HomeAnchorWrapper key="home" href="/">
@@ -98,11 +98,11 @@ const NavBar = () => (
                 </HomeAnchorWrapper>
                 {renderMenuItems(menuList)}
             </Row>
-            <StickRow stickRight={true}>
+            <StickRow stickRight>
                 {renderRelItems(socialList)}
             </StickRow>
         </RowWrapper>
     </BackgroundWrapper>
-);
+}
 
 export default NavBar;

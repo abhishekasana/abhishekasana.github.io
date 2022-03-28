@@ -8,17 +8,17 @@ import ContactMe from 'components/home/contactme';
 import { BaseContainer } from 'components/wrappers';
 import { projectsList, historyList, articlesList } from 'components/home/dataConstants';
 
-const AboutMe = () => (
-    <Layout>
+function AboutMe() {
+  return <Layout>
         <BaseContainer>
             <WhoAmI />
             <SectionList listHeader="ls projects/" taskList={projectsList} collapsed={false} />
-            <SectionList listHeader="history" taskList={historyList} collapsed={true} />
-            <SectionList listHeader="ls articles/" taskList={articlesList} collapsed={true} />
+            <SectionList listHeader="history" taskList={historyList} collapsed />
+            <SectionList listHeader="ls articles/" taskList={articlesList} collapsed />
             <SkillSet/>
             <ContactMe />
         </BaseContainer>
-        {/*<Footer />*/}
+        {/* <Footer /> */}
     </Layout>
-);
+}
 export default AboutMe;
