@@ -7,8 +7,9 @@
     "dev": "node server.js",
     "build": "next build",
     "dnsrecord": "touch docs/CNAME && echo 'kasana.io' > docs/CNAME",
+    "nojekyll": "touch docs/.nojekyll",
     "export": "next build && next export -o docs",
-    "fullexport": "yarn export && yarn dnsrecord",
+    "fullexport": "yarn export && yarn dnsrecord && yarn nojekyll",
     "start": "NODE_ENV=production PORT=$PORT node server.js",
     "lint": "next lint"
   },
