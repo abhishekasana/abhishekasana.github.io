@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from 'routes';
 import styled from 'styled-components';
 
 import {socialList, menuList} from 'constants/external';
@@ -79,9 +80,11 @@ const renderRelItems = (listItems) => (
 const renderMenuItems = (listItems) => (
     listItems.map(({title, bgColor, link}) => (
         <MenuItemWrapper key={title}>
-            <StyleLink href={link}>
-                <Span size="18px" color={bgColor}>{title}</Span>
-            </StyleLink>
+            <Link to={link} href={link} passHref>
+                <StyleLink>
+                    <Span size="18px" color={bgColor}>{title}</Span>
+                </StyleLink>
+            </Link>
         </MenuItemWrapper>
     ))
 )
@@ -90,12 +93,14 @@ function NavBar() {
   return <BackgroundWrapper>
         <RowWrapper>
             <Row>
-                <HomeAnchorWrapper key="home" href="/">
-                    <img
-                        alt="Home"
-                        style={{"max-width": "100%"}} src="https://img.icons8.com/ios-filled/128/ffffff/k.png"
-                    />
-                </HomeAnchorWrapper>
+                <Link to="home" href="/" passHref>
+                    <HomeAnchorWrapper>
+                        <img
+                            alt="Home"
+                            style={{"max-width": "100%"}} src="https://img.icons8.com/ios-filled/128/ffffff/k.png"
+                        />
+                    </HomeAnchorWrapper>
+                </Link>
                 {renderMenuItems(menuList)}
             </Row>
             <StickRow stickRight>

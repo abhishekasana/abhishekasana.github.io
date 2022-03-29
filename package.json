@@ -7,9 +7,10 @@
     "dev": "node server.js",
     "build": "next build",
     "dnsrecord": "touch docs/CNAME && echo 'kasana.io' > docs/CNAME",
-    "export": "next build && next export -o docs && yarn dnsrecord",
+    "correctwildcardpath": "mv docs/_next docs/next",
+    "export": "next build && next export -o docs",
+    "fullexport": "yarn export && yarn dnsrecord && yarn correctwildcardpath",
     "start": "NODE_ENV=production PORT=$PORT node server.js",
-    "collectjs": "cp ./out/index.html .;",
     "lint": "next lint"
   },
   "author": "",

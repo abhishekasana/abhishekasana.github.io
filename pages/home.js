@@ -1,5 +1,7 @@
 import React from "react";
 
+import Link from 'next/link';
+
 import Layout from 'components/Layout';
 import { BaseContainer } from 'components/wrappers';
 import {Col, Span, Text} from "components/webcomps";
@@ -48,18 +50,20 @@ const BoxTitle = styled(Span)`
 
 const renderBoxCard = ({title, description, link, icon, subscript}) => (
     <BoxWrapper key={title}>
-        <StyleLink href={link}>
-            <Col>
-                <ColWrapper>
-                    <BoxTitle size="26px" color={COLORS.NEON_PURPLE}>{title}</BoxTitle>
-                    <Span size="16px" color={COLORS.NEON_PURPLE}>
-                        {description}
-                    </Span>
-                </ColWrapper>
-                <SubScriptText color="#8728e2" size="14px">{subscript}</SubScriptText>
-                <BoxIconWrapper src={icon} />
-            </Col>
-        </StyleLink>
+        <Link href={link} passHref>
+            <StyleLink>
+                <Col>
+                    <ColWrapper>
+                        <BoxTitle size="26px" color={COLORS.NEON_PURPLE}>{title}</BoxTitle>
+                        <Span size="16px" color={COLORS.NEON_PURPLE}>
+                            {description}
+                        </Span>
+                    </ColWrapper>
+                    <SubScriptText color="#8728e2" size="14px">{subscript}</SubScriptText>
+                    <BoxIconWrapper src={icon} />
+                </Col>
+            </StyleLink>
+        </Link>
     </BoxWrapper>
 )
 

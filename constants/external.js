@@ -2,7 +2,7 @@ const socialList = [
     {
         title: 'linked-in',
         imgUrl: 'https://img.icons8.com/ios-glyphs/128/ffffff/linkedin.png',
-        link: 'www.linkedin.com/in/abhishek-kasana-4a7836106',
+        link: 'https://www.linkedin.com/in/abhishek-kasana-4a7836106',
         bgColor: '#0073a4',
     },
     {
