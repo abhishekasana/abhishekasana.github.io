@@ -1,8 +1,9 @@
 const prod = process.env.NODE_ENV === 'production';
+// const BASE_PREFIX_FOR_APP = prod ? '/out/' : '';
+const BASE_PREFIX_FOR_APP = '/';
 
 module.exports = {
-  assetPrefix: prod ? '/out/' : '',
-  // next export -> /out/home/index.js -> /out/index.js
+  assetPrefix: BASE_PREFIX_FOR_APP,
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "export": "next build && next export",
+    "dnsrecord": "touch docs/CNAME && echo 'kasana.io' > docs/CNAME",
+    "export": "next build && next export -o docs && yarn dnsrecord",
     "start": "NODE_ENV=production PORT=$PORT node server.js",
     "collectjs": "cp ./out/index.html .;",
     "lint": "next lint"
