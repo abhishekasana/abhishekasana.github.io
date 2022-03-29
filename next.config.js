@@ -12,6 +12,7 @@ module.exports = {
       '/': { page: '/home' },
       '/about-me': { page: '/about-me' },
       '/blog/birthday-attack': { page: '/blog/birthday-attack' },
+      '/blog/github-pages-nextjs': { page: '/blog/github-pages-nextjs'},
     }
   },
 };
