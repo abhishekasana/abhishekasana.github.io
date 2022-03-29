@@ -1,6 +1,6 @@
 const prod = process.env.NODE_ENV === 'production';
 // const BASE_PREFIX_FOR_APP = prod ? '/out/' : '';
-const BASE_PREFIX_FOR_APP = '/';
+const BASE_PREFIX_FOR_APP = '';
 
 module.exports = {
   assetPrefix: BASE_PREFIX_FOR_APP,
