@@ -48,7 +48,6 @@ class CollapsibleSection extends React.PureComponent {
     }
 
     toggleDetailView = () => {
-        alert('clicked!!')
         this.setState(({collapsed}) => ({
             collapsed: !collapsed
         }));
