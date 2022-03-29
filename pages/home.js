@@ -47,9 +47,9 @@ const BoxTitle = styled(Span)`
 `;
 
 const renderBoxCard = ({title, description, link, icon, subscript}) => (
-    <Link href={link} passHref>
+    <Link key={title} href={link} passHref>
         <StyleLink>
-            <BoxWrapper key={title}>
+            <BoxWrapper>
                 <Row>
                     <Col>
                         <ColWrapper>

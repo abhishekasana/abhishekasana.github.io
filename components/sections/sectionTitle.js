@@ -21,7 +21,7 @@ const SpanWrapper = styled.span`
 
 function SectionTitle({ title }) {
   return <TitleWrapper>
-        <SpanWrapper>zerodark@kasana:~$</SpanWrapper>
+        <SpanWrapper>zd@kasana:~$</SpanWrapper>
         <SpanWrapper>&nbsp;{title}</SpanWrapper>
     </TitleWrapper>
 }
