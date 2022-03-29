@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import Layout from 'components/Layout';
 import { BaseContainer } from 'components/wrappers';
-import {Col, Span, Text} from "components/webcomps";
+import {Col, Row, Span, Text} from "components/webcomps";
 import styled from "styled-components";
 import {featuredBlogs} from "constants/external";
 import COLORS from "constants/color";
@@ -23,8 +23,6 @@ const BoxWrapper = styled.div`
 `;
 const StyleLink = styled.a`
   text-decoration: none;
-  display: flex;
-  flex-basis: 100%;
 `;
 const SubScriptText = styled(Text)`
   margin: 6px 0 0 0;
@@ -49,22 +47,24 @@ const BoxTitle = styled(Span)`
 `;
 
 const renderBoxCard = ({title, description, link, icon, subscript}) => (
-    <BoxWrapper key={title}>
-        <Link href={link} passHref>
-            <StyleLink>
-                <Col>
-                    <ColWrapper>
-                        <BoxTitle size="26px" color={COLORS.NEON_PURPLE}>{title}</BoxTitle>
-                        <Span size="16px" color={COLORS.NEON_PURPLE}>
-                            {description}
-                        </Span>
-                    </ColWrapper>
-                    <SubScriptText color="#8728e2" size="14px">{subscript}</SubScriptText>
-                    <BoxIconWrapper src={icon} />
-                </Col>
-            </StyleLink>
-        </Link>
-    </BoxWrapper>
+    <Link href={link} passHref>
+        <StyleLink>
+            <BoxWrapper key={title}>
+                <Row>
+                    <Col>
+                        <ColWrapper>
+                            <BoxTitle size="26px" color={COLORS.NEON_PURPLE}>{title}</BoxTitle>
+                            <Span size="16px" color={COLORS.NEON_PURPLE}>
+                                {description}
+                            </Span>
+                        </ColWrapper>
+                        <SubScriptText color="#8728e2" size="14px">{subscript}</SubScriptText>
+                        <BoxIconWrapper src={icon} />
+                    </Col>
+                </Row>
+            </BoxWrapper>
+        </StyleLink>
+    </Link>
 )
 
 
