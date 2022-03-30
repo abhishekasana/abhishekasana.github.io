@@ -95,9 +95,9 @@ function NavBar() {
             <Row>
                 <Link to="home" href="/" passHref>
                     <HomeAnchorWrapper>
-                        <img
+                        <ImageWrapper
                             alt="Home"
-                            style={{"max-width": "100%"}} src="https://img.icons8.com/ios-filled/128/ffffff/k.png"
+                            src="https://img.icons8.com/ios-filled/128/ffffff/k.png"
                         />
                     </HomeAnchorWrapper>
                 </Link>

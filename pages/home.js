@@ -74,7 +74,6 @@ function Home() {
             <br/>
             <Text size="32px">Featured Blogs</Text>
             <br/>
-            <br/>
             {featuredBlogs.map((item)=> renderBoxCard({...item}))}
         </BaseContainer>
     </Layout>

@@ -9,7 +9,7 @@ const StyleLink = styled.a`
   text-decoration: none;
 `;
 
-export default function() {
+ function contactMe() {
   return <SectionContainer>
       <SectionTitle title='cat Contact.md'/>
       <Text>
@@ -26,3 +26,5 @@ export default function() {
       </Text>
   </SectionContainer>
 };
+
+export default contactMe;
