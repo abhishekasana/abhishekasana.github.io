@@ -41,6 +41,13 @@ const githubPagesNextJSBlog = () => (
         <BaseContainer>
                 <BlogWrapper>
                         <Title title="Github Pages with Next JS"/>
+                        <DivWrapper>
+                        Learn how to get up and running with your first GitHub Pages website using Next.js .&nbsp;
+                        A quick and easy way for creating & publishing a free portfolio, blog or website.
+                        By the end of the blog, you will have your own domain and a public place without any hosting cost to post your work.{'\n'}
+                        We will be using Next.js which is an open-source React front-end framework which supports &quot;static-site generation&quot;.
+                        It exports our react app to static HTML which can be run standalone without the need of a Node.js server & moreover, this can be processed by GitHub Pages.
+                        </DivWrapper>
                         <Separator />
                         <BlogSectionHeader>
                             Github Setup

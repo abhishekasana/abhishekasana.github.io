@@ -50,7 +50,7 @@ const featuredBlogs = [
     },
     {
         title: "Github Pages with NextJS",
-        description: "Setup your own website with github pages using Next js framework.",
+        description: "Setup your own free website with github pages using Next.js framework.",
         link: "/blog/github-pages-nextjs",
         icon: "https://img.icons8.com/pastel-glyph/256/56569e/website--v2.png",
         subscript: "Js | 10 min read"
