@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 const TitleWrapper = styled.h2`
     font-size: 32px;
-    margin: 0px 0px .5em;
+    margin: 0 0 .5em;
     font-weight: 500;
     & > :first-child {
         color: #FFF053;
     };
     
     @media(max-width: 767px) {
-        font-size: 24px;
+      font-size: 26px;
     }
 `;
 const SpanWrapper = styled.span`

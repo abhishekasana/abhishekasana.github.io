@@ -8,6 +8,11 @@ export const BlogWrapper = styled.div`
     font-size: 1.125rem;
     line-height: 1.5;
     margin-bottom: 5em;
+
+    @media(max-width: 767px) {
+      font-size: 1.0625rem;
+    }
+
 `;
 
 export const BlogSectionHeader = styled.h2`
@@ -15,7 +20,7 @@ export const BlogSectionHeader = styled.h2`
     margin: .4em 0;
     font-weight: 500;
 
-    @media (max-width: 983px) {
+    @media (max-width: 1024px) {
       font-size: 26px;
     }
 `;
@@ -24,5 +29,5 @@ export const Separator = styled.hr`
     margin: ${props => props.gap ? props.gap: "16px"} 0;
     border: none;
     background: ${props => props.bg ? props.bg:  '#f5f8fa'};
-    height: 2px;
+    height: ${props => props.height ? props.height: "2px"};
 `;

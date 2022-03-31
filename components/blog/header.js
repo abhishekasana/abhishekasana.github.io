@@ -8,8 +8,13 @@ const TitleWrapper = styled.h1`
   letter-spacing: -1px;
   line-height: 1.1;
   margin-bottom: 3%;
-  @media (max-width: 767px) {
+
+  @media (max-width: 1024px) {
     font-size: 54px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 42px;
   }
 `;
 
