@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "dnsrecord": "touch docs/CNAME && echo 'kasana.io' > docs/CNAME",
+    "dnsrecord": "touch docs/CNAME && echo 'www.kasana.io' > docs/CNAME",
     "nojekyll": "touch docs/.nojekyll",
     "export": "next build && next export -o docs",
     "fullexport": "yarn export && yarn dnsrecord && yarn nojekyll",
