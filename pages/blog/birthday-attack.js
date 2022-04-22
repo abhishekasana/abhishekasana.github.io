@@ -100,6 +100,9 @@ function BirthdayAttackBlog() {
                             style={{
                                 global: {
                                     margin: "1em 0 0 0 !important",
+                                    collapsedAccordion: '+',
+                                    expandedAccordion: '-',
+                                    accordionPosition: 'right',
                                 }
                             }}
                         />
@@ -132,6 +135,9 @@ function BirthdayAttackBlog() {
                             style={{
                                 global: {
                                     margin: "1em 0 0 0 !important",
+                                    collapsedAccordion: '+',
+                                    expandedAccordion: '-',
+                                    accordionPosition: 'right',
                                 }
                             }}
                         />

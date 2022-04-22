@@ -7,10 +7,11 @@ import { SectionContainer } from "../wrappers";
 const HeadWrapper = styled.div`
     cursor: pointer;
     & > :last-child::after {
-        content: '${props => props.collapsed === true ? '▌': ''}';
+        content: '${props => props.collapsed === true ? props.style.collapsedAccordion: props.style.expandedAccordion}';
         // animation: blinker 1.2s linear infinite;
         color: #FFF053;
         font-family: monospace;
+        float: ${props => props.style.accordionPosition};
         display: inline-block;
         padding-left: 12px;
     };
@@ -30,12 +31,12 @@ class CollapsibleSection extends React.PureComponent {
         header: PropTypes.object.isRequired,
         body: PropTypes.object.isRequired,
         collapsed: PropTypes.bool,
-        style: PropTypes.shape({})
+        style: PropTypes.shape({}),
     };
 
     static defaultProps = {
         collapsed: true,
-        style: {}
+        style: {global: {collapsedAccordion: '▌', expandedAccordion: '', accordionPosition: null}}
     };
 
     constructor(props) {
@@ -59,7 +60,7 @@ class CollapsibleSection extends React.PureComponent {
 
         return (
             <SectionWrapper style={globalStyle}>
-                <HeadWrapper onClick={() => this.toggleDetailView()} collapsed={collapsed}>
+                <HeadWrapper onClick={() => this.toggleDetailView()} collapsed={collapsed} style={globalStyle}>
                     {header}
                 </HeadWrapper>
                 {!collapsed && body}
