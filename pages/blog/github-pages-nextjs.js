@@ -28,6 +28,11 @@ const ShellCode = styled.code`
     content: "$ "
   }
 `;
+const StyleLink = styled.a`
+  text-decoration-line: underline;
+  text-decoration-color: ${COLORS.L_TINT_PURPLE};
+  color: ${COLORS.L_TINT_PURPLE};
+`;
 
 const scriptJsonConf = `"scripts": {
         //...other_scripts
@@ -76,11 +81,10 @@ const githubPagesNextJSBlog = () => (
                                         </ShellCode>
                                 </Snippet>
                                 Useful Links - [
-                                        <a
-                                            style={{color: COLORS.NEON_PURPLE}}
+                                        <StyleLink
                                             href="https://www.digitalocean.com/community/tutorials/how-to-push-an-existing-project-to-github">
                                                 How to push a project to github
-                                        </a>
+                                        </StyleLink>
                                 ]
                         </DivWrapper>
                         <BlogSectionHeader>
