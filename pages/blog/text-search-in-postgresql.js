@@ -62,11 +62,7 @@ const ftsOnDistributedData = () => (
                 <BlogSectionHeader>
                     Available Options
                 </BlogSectionHeader>
-                Postgres offers several tools for&nbsp;
-                <StyleLink href={referenceLinks.pgDocPatternMatch}>
-                    pattern matching
-                </StyleLink>
-                &nbsp;and searching text. There's:
+                Postgres offers several tools for pattern matching and searching text. There's:
                 <ul>
                     <li>
                         <Code>LIKE</Code>, <Code>SIMILAR TO</Code>, Regex
@@ -98,7 +94,11 @@ const ftsOnDistributedData = () => (
                 <BlogSectionHeader>
                     LIKE & Regex for pattern search
                 </BlogSectionHeader>
-                To implement a search we can think of a simple <strong>pattern search</strong> where we are filtering the rows based on a
+                To implement a search we can think of a simple&nbsp;
+                <StyleLink href={referenceLinks.pgDocPatternMatch}>
+                    pattern search
+                </StyleLink>
+                &nbsp;where we are filtering the rows based on a
                 exact pattern i.e <Code>LIKE pattern</Code> or <Code>~ pattern</Code>
                 <br/>
                 <Snippet>
