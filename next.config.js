@@ -11,7 +11,7 @@ module.exports = {
     return {
       '/': { page: '/home' },
       '/about-me': { page: '/about-me' },
-      '/social-banner-test': { page: '/social-banner-test' },
+      '/social-banner-test-2': { page: '/social-banner-test' },
       '/blog/birthday-attack': { page: '/blog/birthday-attack' },
       '/blog/github-pages-nextjs': { page: '/blog/github-pages-nextjs'},
       '/blog/text-search-in-postgresql': { page: '/blog/text-search-in-postgresql'},
