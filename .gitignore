@@ -11,3 +11,6 @@
 *.bak
 
 *.idea/
+
+#notes
+.notes/

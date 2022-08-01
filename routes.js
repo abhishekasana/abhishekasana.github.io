@@ -5,4 +5,5 @@ module.exports = routes()
     .add('blog-b-attack', '/blog/birthday-attack', '/blog/birthday-attack')
     .add('github-pages-js', '/blog/github-pages-nextjs', '/blog/github-pages-nextjs')
     .add('text-search-in-postgres', '/blog/text-search-in-postgresql', '/blog/text-search-in-postgresql')
+    .add('social-banner-test', '/social-banner-test', '/social-banner-test')
     .add('home', '/', '/home');
