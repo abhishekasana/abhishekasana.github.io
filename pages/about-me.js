@@ -12,9 +12,8 @@ function AboutMe() {
   return <Layout>
         <BaseContainer>
             <WhoAmI />
-            <SectionList listHeader="ls projects/" taskList={projectsList} collapsed={false} />
-            <SectionList listHeader="history" taskList={historyList} collapsed />
-            <SectionList listHeader="ls articles/" taskList={articlesList} collapsed />
+            <SectionList listHeader="history" taskList={historyList} collapsed={false} />
+            <SectionList listHeader="ls projects/" taskList={projectsList} collapsed />
             <SkillSet/>
             <ContactMe />
         </BaseContainer>

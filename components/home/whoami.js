@@ -1,19 +1,20 @@
 import React from 'react';
 
-import { Text } from '../webcomps';
+import {Text} from '../webcomps';
 import SectionTitle from '../sections/sectionTitle';
-import { SectionContainer } from "../wrappers";
+import {SectionContainer} from "../wrappers";
 
 function WhoAmI() {
-  return <SectionContainer>
-        <SectionTitle title="whoami" />
+    return <SectionContainer>
+        <SectionTitle title="whoami"/>
         <Text>
-            I’m Abhishek Kasana, a software developer based in India.
+            I'm a software developer and a tinkerer.
             <br/>
-            My motivation behind writing these blogs is, as a developer when solving problems the solution
-            which I implement are not always from ground up, these base layer's over which I build upon is a fascinating
-            piece of code which I like to understand & tinker with. This helps we as a developer to solve my future
-            problems with new perspective and dimensions.
+            <br/>
+            As a software developer and an avid explorer, I'm fascinated by understanding how
+            things work, whether it's a challenging piece of code or the everyday wonders of life. This approach fuels
+            my engineering creativity, leading to better solutions and innovations. My blog is born from this passion, a
+            platform where I share my experiences and the insights gained along the way.
         </Text>
     </SectionContainer>
 }

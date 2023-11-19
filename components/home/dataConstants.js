@@ -26,7 +26,7 @@ const projectsList = [
 ];
 const historyList = [
     {
-        title: '2018 / Present - Software Developer - Cuemath - Bengaluru, India',
+        title: '2018 / Present - Lead Software Developer - Cuemath - Bengaluru, India',
         highlight: 'Cuemath',
         hexCode: '#DF5DFF',
         link: 'https://www.cuemath.com'

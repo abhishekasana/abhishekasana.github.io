@@ -33,7 +33,7 @@ const socialList = [
 
 const menuList = [
     {
-        title: 'ABOUT',
+        title: 'about',
         imgUrl: null,
         link: '/about-me',
         bgColor: '#fff'

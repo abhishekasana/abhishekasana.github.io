@@ -14,7 +14,6 @@ module.exports = {
       '/blog/birthday-attack': { page: '/blog/birthday-attack' },
       '/blog/github-pages-nextjs': { page: '/blog/github-pages-nextjs'},
       '/blog/text-search-in-postgresql': { page: '/blog/text-search-in-postgresql'},
-      '/test-banner-1': { page: '/test-banner'},
     }
   },
 };
