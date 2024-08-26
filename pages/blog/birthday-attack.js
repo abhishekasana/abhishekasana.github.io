@@ -1,7 +1,6 @@
 import React from "react";
 
 import Head from "next/head";
-import styled from 'styled-components';
 
 import {BlogWrapper, BlogSectionHeader, Separator} from 'components/blog/wrapper';
 import CollapsibleSection from 'components/sections/collapsibleSection';
@@ -9,16 +8,7 @@ import Title from 'components/blog/header';
 import Layout from 'components/Layout';
 import { BaseContainer } from "components/wrappers";
 import { renderEquation } from "utils/methods";
-import COLORS from "constants/color";
-
-const Snippet = styled.div`
-  font: normal 16px monospace;
-  background-color: ${COLORS.LIGHT_PURPLE};
-  border: 1px solid ${COLORS.LIGHT_WHITE};
-  padding: 12px;
-  margin: 16px 0;
-  border-radius: 2px;
-`;
+import {Snippet} from "components/fancyWrappers";
 
 const renderDisplayEquation = (eq, elt) => renderEquation(eq, elt, {displayMode: true});
 const renderInlineEquation = (eq, elt) => renderEquation(eq, elt, {displayMode: false});

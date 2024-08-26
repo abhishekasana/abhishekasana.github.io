@@ -1,5 +1,6 @@
 import { ServerStyleSheet } from 'styled-components';
 import Document, { Head, Main, NextScript, Html } from 'next/document'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default class CustomDocument extends Document {
     static async getInitialProps({ renderPage }) {
@@ -31,6 +32,7 @@ export default class CustomDocument extends Document {
                     <Main />
                     <NextScript />
                 </body>
+                <GoogleAnalytics gaId="G-NZG9GX3RQK" />
             </Html>
         )
     }

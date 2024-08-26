@@ -42,6 +42,13 @@ const menuList = [
 
 const featuredBlogs = [
     {
+        title: "Currency Arbitrage",
+        description: "Using Graph Theory to Detect Arbitrage Opportunities in Currency Markets",
+        link: "/blog/currency-arbitrage",
+        icon: "https://img.icons8.com/ios/256/56569e/graph--v1.png",
+        subscript: "Quant | 15 min read"
+    },
+    {
         title: "Text Search in PostgreSQL",
         description: "Implement wildcard & fuzzy search in PostgreSQL.",
         link: "/blog/text-search-in-postgresql",

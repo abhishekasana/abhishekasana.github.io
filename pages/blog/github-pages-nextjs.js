@@ -9,29 +9,10 @@ import {BlogSectionHeader, BlogWrapper, Separator} from "components/blog/wrapper
 import Title from "components/blog/header";
 import COLORS from "constants/color";
 import Thumbnail from "components/thumbnail";
+import {ShellCode, Snippet, StyleLink} from "components/fancyWrappers";
 
-const Snippet = styled.div`
-  font: normal 16px monospace;
-  background-color: ${COLORS.LIGHT_PURPLE};
-  border: 1px solid ${COLORS.LIGHT_WHITE};
-  padding: 12px;
-  margin: 16px 0;
-  border-radius: 2px;
-  white-space: pre-wrap;
-  overflow: auto;
-`;
 const DivWrapper = styled.div`
   white-space: pre-wrap;
-`;
-const ShellCode = styled.code`
-  span::before {
-    content: "$ "
-  }
-`;
-const StyleLink = styled.a`
-  text-decoration-line: underline;
-  text-decoration-color: ${COLORS.L_TINT_PURPLE};
-  color: ${COLORS.L_TINT_PURPLE};
 `;
 
 const scriptJsonConf = `"scripts": {

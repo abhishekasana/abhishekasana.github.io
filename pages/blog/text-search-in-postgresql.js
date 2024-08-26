@@ -9,27 +9,15 @@ import {BlogSectionHeader, BlogWrapper, Separator} from "components/blog/wrapper
 import Title from "components/blog/header";
 import COLORS from "constants/color";
 import CollapsibleSection from "components/sections/collapsibleSection";
+import {Snippet, StyleLink} from "components/fancyWrappers";
 
 const BlogBaseWrapper = styled(BlogWrapper)`
   white-space: pre-wrap;
-`;
-const Snippet = styled.div`
-  font: normal 16px monospace;
-  background-color: ${COLORS.LIGHT_PURPLE};
-  border: 1px solid ${COLORS.LIGHT_WHITE};
-  padding: 12px;
-  margin: 16px 0;
-  border-radius: 2px;
 `;
 const Code = styled.code`
   background-color: ${COLORS.LIGHT_PURPLE};
   padding: 2px 4px;
   border-radius: 3px;
-`;
-const StyleLink = styled.a`
-  text-decoration-line: underline;
-  text-decoration-color: ${COLORS.L_TINT_PURPLE};
-  color: ${COLORS.L_TINT_PURPLE};
 `;
 
 const setupSnippet = (

@@ -14,6 +14,8 @@ module.exports = {
       '/blog/birthday-attack': { page: '/blog/birthday-attack' },
       '/blog/github-pages-nextjs': { page: '/blog/github-pages-nextjs'},
       '/blog/text-search-in-postgresql': { page: '/blog/text-search-in-postgresql'},
+      '/blog/deepdive-in-storage': { page: '/blog/deepdive-in-storage'},
+      '/blog/currency-arbitrage': { page: '/blog/currency-arbitrage'},
     }
   },
 };
