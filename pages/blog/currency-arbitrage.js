@@ -46,11 +46,11 @@ const currencyArbitrageBlog = () => (
           similar assets across markets.
           <br />
           <br />
-          Currency markets are a natural place to search for arbitrage opportunities due
-          to the numerous currency pairs available for trading. For instance, suppose we
-          can convert INR to USD, USD to JPY, and then JPY to AUD. If this sequence of
-          conversions results in a more favorable rate than directly converting INR to
-          AUD, we have an arbitrage opportunity.
+          Currency markets are ideal for finding arbitrage opportunities due to the many
+          currency pairs available for trading. For example, if you convert EUR to USD,
+          USD to GBP, and then GBP back to EUR, and end up with more EUR than you started
+          with, you've identified an arbitrage opportunity. This happens when the sequence
+          of conversions results in a more favorable rate than a direct conversion.
         </DivWrapper>
         <Separator />
         <BlogSectionHeader>Modeling Currency Markets with Graphs</BlogSectionHeader>
