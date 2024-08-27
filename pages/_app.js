@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { NEXT_PUBLIC_GOOGLE_ANALYTICS_ID } from '../constants/default';
 
 function MyApp({ Component, pageProps }) {
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-      <GoogleTagManager gtmId={NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
+      <GoogleAnalytics gaId={NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
     </>
   );
 }
