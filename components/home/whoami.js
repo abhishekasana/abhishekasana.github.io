@@ -1,22 +1,33 @@
 import React from 'react';
 
-import {Text} from '../webcomps';
+import { Text } from '../webcomps';
 import SectionTitle from '../sections/sectionTitle';
-import {SectionContainer} from "../wrappers";
+import { SectionContainer } from '../wrappers';
 
 function WhoAmI() {
-    return <SectionContainer>
-        <SectionTitle title="whoami"/>
-        <Text>
-            I'm a software developer and a tinkerer.
-            <br/>
-            <br/>
-            As a software developer and an avid explorer, I'm fascinated by understanding how
-            things work, whether it's a challenging piece of code or the everyday wonders of life. This approach fuels
-            my engineering creativity, leading to better solutions and innovations. My blog is born from this passion, a
-            platform where I share my experiences and the insights gained along the way.
-        </Text>
+  return (
+    <SectionContainer>
+      <SectionTitle title="whoami" />
+      <Text>
+        I'm Abhishek Kasana, a software developer who thrives on untangling complexity and
+        exploring the inner workings of systems.
+        <br />
+        My passion lies in operating systems, compilers, networking, and security
+        engineering. I love diving deep into these areas to uncover their intricacies and
+        drive innovation.
+        <br />
+        <br />
+        As a tinkerer at heart, I’m fascinated by how things work, whether it's a
+        sophisticated piece of code or a new tech challenge. This curiosity fuels my
+        creativity and problem-solving skills.
+        <br />
+        My blog features a series called "Under the Hood," where I simplify and decipher
+        complex or cutting-edge systems I've built or encountered. It's my way of marking
+        key insights and sharing the journey, both for myself and for others who share a
+        similar curiosity.
+      </Text>
     </SectionContainer>
+  );
 }
 
 export default WhoAmI;

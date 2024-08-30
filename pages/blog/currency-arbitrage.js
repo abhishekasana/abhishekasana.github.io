@@ -23,7 +23,7 @@ const currencyArbitrageBlog = () => (
   <Layout>
     <BaseContainer>
       <BlogWrapper>
-        <Title title="Currency Arbitrage" />
+        <Title title="Currency Arbitrage Explained" />
         <Separator />
         <BlogSectionHeader>Introduction</BlogSectionHeader>
         <DivWrapper>

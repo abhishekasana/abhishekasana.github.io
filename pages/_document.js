@@ -1,5 +1,6 @@
 import { ServerStyleSheet } from 'styled-components';
 import Document, { Head, Main, NextScript, Html } from 'next/document';
+import COLORS from '../constants/color';
 
 export default class CustomDocument extends Document {
   static async getInitialProps({ renderPage }) {
@@ -19,9 +20,13 @@ export default class CustomDocument extends Document {
                 /* custom! */
                 body {
                     margin: 0;
-                    background: #1b1c30;
+                    background: ${COLORS.NIGHT_SHADE};
                     color: white;
-                    font-family: Lato,sans-serif;
+                    font-family: Verdana, DejaVu Sans, sans-serif;
+                    ::selection {
+                      background-color: ${COLORS.PURPLE_HIGHLIGHT};
+                      color: ${COLORS.WHITE};
+                    }
                 } 
             `}
           </style>

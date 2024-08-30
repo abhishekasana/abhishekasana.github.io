@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 import Link from 'next/link';
 
 import Layout from 'components/Layout';
 import { BaseContainer } from 'components/wrappers';
-import {Col, Row, Span, Text} from "components/webcomps";
-import styled from "styled-components";
-import {featuredBlogs} from "constants/external";
-import COLORS from "constants/color";
+import { Col, Row, Span, Text } from 'components/webcomps';
+import styled from 'styled-components';
+import { featuredBlogs } from 'constants/external';
+import COLORS from 'constants/color';
 
 const BoxWrapper = styled.div`
   display: flex;
@@ -16,20 +16,20 @@ const BoxWrapper = styled.div`
   box-sizing: border-box;
   font-size: 16px;
   line-height: 24px;
-  border: 3px solid ${COLORS.NEON_PURPLE};
-  min-height: 128px;
   position: relative;
   margin-bottom: 16px;
 `;
 const StyleLink = styled.a`
   text-decoration: none;
 `;
-const SubScriptText = styled(Text)`
-  margin: 6px 0 0 0;
-`;
-const ColWrapper = styled(Col)`
-  flex-basis: 100%;
-  justify-content: flex-start;
+const FlexContainer = styled(Row)`
+  flex-wrap: unset;
+  gap: 1rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: unset;
+  }
 `;
 const BoxIconWrapper = styled.img`
   position: absolute;
@@ -38,44 +38,55 @@ const BoxIconWrapper = styled.img`
   margin: auto;
   left: 80%;
   top: 50%;
-  transform: translate(-50%,-50%);
-  opacity: 0.4;
+  transform: translate(-50%, -50%);
+  opacity: 0.15;
   z-index: -1;
 `;
 const BoxTitle = styled(Span)`
-    margin-bottom: 12px;
+  margin-bottom: 4px;
 `;
 
-const renderBoxCard = ({title, description, link, icon, subscript}) => (
-    <Link key={title} href={link} passHref>
-        <StyleLink>
-            <BoxWrapper>
-                <Row>
-                    <Col>
-                        <ColWrapper>
-                            <BoxTitle size="26px" color={COLORS.NEON_PURPLE}>{title}</BoxTitle>
-                            <Span size="16px" color={COLORS.NEON_PURPLE}>
-                                {description}
-                            </Span>
-                        </ColWrapper>
-                        <SubScriptText color="#8728e2" size="14px">{subscript}</SubScriptText>
-                        <BoxIconWrapper src={icon} />
-                    </Col>
-                </Row>
-            </BoxWrapper>
-        </StyleLink>
-    </Link>
-)
-
+const renderBoxCard = ({ title, description, postedOn, link, icon, subscript }) => (
+  <Link key={title} href={link} passHref>
+    <StyleLink>
+      <BoxWrapper>
+        <FlexContainer>
+          <BoxTitle size="14px" color={COLORS.GREY}>
+            {postedOn}
+          </BoxTitle>
+          <Col>
+            <BoxTitle size="24px" color={COLORS.PURPLE_HIGHLIGHT}>
+              #
+              <Span size="24px" color={COLORS.LIGHT_WHITE}>
+                {' '}
+                {title}
+              </Span>
+            </BoxTitle>
+            <Span size="14px" color={COLORS.GREY}>
+              {description}
+            </Span>
+            <Span color={COLORS.PURPLE_HIGHLIGHT} size="14px">
+              {subscript}
+            </Span>
+            <BoxIconWrapper src={icon} />
+          </Col>
+        </FlexContainer>
+      </BoxWrapper>
+    </StyleLink>
+  </Link>
+);
 
 function Home() {
-  return <Layout>
-        <BaseContainer>
-            <br/>
-            <Text size="32px">Featured Blogs</Text>
-            <br/>
-            {featuredBlogs.map((item)=> renderBoxCard({...item}))}
-        </BaseContainer>
+  return (
+    <Layout>
+      <BaseContainer>
+        <br />
+        <Text size="32px">Featured Blogs</Text>
+        <br />
+        {featuredBlogs.map(item => renderBoxCard({ ...item }))}
+      </BaseContainer>
     </Layout>
+  );
 }
+
 export default Home;
