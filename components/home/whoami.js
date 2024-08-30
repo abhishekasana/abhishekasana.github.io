@@ -9,7 +9,7 @@ function WhoAmI() {
     <SectionContainer>
       <SectionTitle title="whoami" />
       <Text>
-        I'm Abhishek Kasana, a software developer who thrives on untangling complexity and
+        I'm Abhishek Kasana, a programmer who thrives on untangling complexity and
         exploring the inner workings of systems.
         <br />
         My passion lies in operating systems, compilers, networking, and security
