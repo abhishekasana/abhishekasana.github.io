@@ -14,6 +14,7 @@ module.exports = {
       '/blog/text-search-in-postgresql': { page: '/blog/text-search-in-postgresql' },
       '/blog/deepdive-in-storage': { page: '/blog/deepdive-in-storage' },
       '/blog/currency-arbitrage': { page: '/blog/currency-arbitrage' },
+      '/blog/solving-time-collisions-with-geometric-algorithms': { page: '/blog/line-sweep' }
     };
   },
 };
