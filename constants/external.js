@@ -42,7 +42,7 @@ const menuList = [
 
 const featuredBlogs = [
   {
-    title: 'Solving time collisions with geometric algorithms',
+    title: 'Solving schedule collisions with geometric algorithms',
     description: 'How the Line Sweep algorithm simplified scheduling conflicts',
     link: '/blog/solving-time-collisions-with-geometric-algorithms',
     icon: 'https://img.icons8.com/ios/256/BD93F9/graph--v1.png',

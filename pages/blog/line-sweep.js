@@ -25,7 +25,7 @@ const LineSweepBlog = () => (
   <Layout>
     <BaseContainer>
       <BlogWrapper>
-        <Title title="Solving time collisions with geometric algorithms" />
+        <Title title="Solving schedule collisions with geometric algorithms" />
         <Separator />
         <BlogSectionHeader>Introduction</BlogSectionHeader>
         <DivWrapper>
