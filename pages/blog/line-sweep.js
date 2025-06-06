@@ -37,7 +37,7 @@ const LineSweepBlog = () => (
         <Separator />
         <BlogSectionHeader>How I Discovered Line Sweep: A Scheduling Analysis Dilemma</BlogSectionHeader>
         <DivWrapper>
-          The problem was deceptively simple: find all overlapping time slots across thousands of appointments in our scheduling system. My first instinct was the brute-force route—compare every pair of slots and check for collisions. Whether done in SQL or in memory, the approach quickly crumbled under real-world scale. With tens of thousands of slots being logged daily across multiple time zones, the computation became unmanageable.
+          The problem was deceptively simple: find all overlapping time slots across thousands of appointments in our scheduling system. My first instinct was the brute-force route—compare every pair of slots and check for collisions. Whether done in SQL or in memory, the approach quickly crumbled under real-world scale. With thousands of slots being logged daily across multiple time zones, the computation became unmanageable.
           <br />
           <br />
           I wasn't willing to settle for batching, it felt like conceding defeat. That's when a distant memory resurfaced: the line sweep.
