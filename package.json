@@ -28,7 +28,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@next/third-parties": "^14.2.6",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "next": "12",
