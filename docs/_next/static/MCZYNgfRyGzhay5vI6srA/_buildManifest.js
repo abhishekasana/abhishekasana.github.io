@@ -2,7 +2,7 @@
   return {
     '__rewrites': { beforeFiles: [], afterFiles: [], fallback: [] },
     '/_error': ['static/chunks/pages/_error-1995526792b513b2.js'],
-    '/about-me': [e, 'static/chunks/pages/about-me-66a00a89deed853b.js'],
+    '/about-me': [e, 'static/chunks/pages/about-me-2c89fb702d9d5cd4.js'],
     '/blog/bcrypt': ['static/chunks/pages/blog/bcrypt-4f564d7a223e78ad.js'],
     '/blog/birthday-attack': [
       e,
